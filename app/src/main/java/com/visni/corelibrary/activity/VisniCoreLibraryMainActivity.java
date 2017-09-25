@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.visni.corelibrary.R;
+import com.visni.corelibrary.util.User;
 import com.visni.corelibrary.util.VisniAlertDialog;
 
 public class VisniCoreLibraryMainActivity extends AppCompatActivity {
@@ -13,6 +14,10 @@ public class VisniCoreLibraryMainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_visni_core_library_main);
+    }
+
+    public String getAuthToken (String username, String password){
+        return new User(username, password).getAuthToken();
     }
 
     public void showVisniAlertDialog(String title, String msg, int icon, Boolean isCancelable){

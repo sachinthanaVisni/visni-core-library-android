@@ -11,10 +11,10 @@ bintray {
         name = 'com.github.sachinthanaVisni.visni-core-library-android'
 
         version {
-            name = '0.0.1'
+            name = '0.0.2'
             desc = 'visni-core-library'
             released  = new Date()
-            vcsTag = '0.0.1'
+            vcsTag = '0.0.2'
         }
 
         licenses = ['Apache-2.0']
